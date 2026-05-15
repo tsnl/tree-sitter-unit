@@ -12,10 +12,8 @@
 (Expr_Str_0) @string
 (Comment__c) @comment
 
-; Identifiers (default to variable; uppercase names rendered as types)
+; Identifiers
 (Ident_name) @variable
-((Ident_name) @type
-  (#match? @type "^[A-Z]"))
 
 ; Operators
 (Expr_Add_1) @operator
