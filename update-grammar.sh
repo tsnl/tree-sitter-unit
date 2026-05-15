@@ -7,7 +7,7 @@
 set -euo pipefail
 
 submodule_dir="$(cd "$(dirname "$0")" && pwd)"
-parent_repo="$submodule_dir/../.."
+parent_repo="$submodule_dir/../"
 
 cd "$parent_repo"
 cargo build --quiet
