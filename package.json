@@ -1,0 +1,12 @@
+{
+  "name": "tree-sitter-unit",
+  "version": "0.0.1",
+  "description": "Tree-sitter grammar for Unit (auto-generated from rust-sitter)",
+  "main": "grammar.js",
+  "tree-sitter": [
+    {
+      "scope": "source.unit",
+      "file-types": ["unit", "resin"]
+    }
+  ]
+}
