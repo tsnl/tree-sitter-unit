@@ -12,10 +12,12 @@
 (Expr_Str_0) @string
 (Comment__c) @comment
 
-; Identifiers — builtins highlighted as types, everything else as a variable
+; Identifiers — builtin or uppercase names as types, everything else as a variable
+(Ident_name) @variable
 ((Ident_name) @type
   (#any-of? @type "type" "unit" "bool" "int" "float" "usize" "struct" "Ten"))
-(Ident_name) @variable
+((Ident_name) @type
+  (#match? @type "^[A-Z]"))
 
 ; Operators
 (Expr_Add_1) @operator
