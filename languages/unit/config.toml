@@ -1,0 +1,5 @@
+name = "Unit"
+grammar = "unit"
+path_suffixes = ["unit", "resin"]
+line_comments = ["# "]
+block_comment = ["#|", "|#"]
