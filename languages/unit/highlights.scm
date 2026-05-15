@@ -12,7 +12,9 @@
 (Expr_Str_0) @string
 (Comment__c) @comment
 
-; Identifiers
+; Identifiers — builtins highlighted as types, everything else as a variable
+((Ident_name) @type
+  (#any-of? @type "type" "unit" "bool" "int" "float" "usize" "struct" "Ten"))
 (Ident_name) @variable
 
 ; Operators
